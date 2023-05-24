@@ -75,7 +75,7 @@ body {
     font-family: 'Dancing Script', cursive;
  }
 
-.button button{
+  .button-area button{
     background-color: #1b5661;
     color: white;
     font-size: 15px;
@@ -84,12 +84,12 @@ body {
     border-radius: 5px;;
 }
 
-.button button:active{
+  .button-area button:active{
     background-color: #f09a97;
     display: none;
-}
+}*/
 
-.button button:hover{
+/* #next-quote:hover {
     background-color: #f56964;
 }
 

@@ -1,4 +1,5 @@
 
+
 // Variables 
 
 let btn = document.querySelector('#next-quote');
@@ -55,7 +56,9 @@ const quotes = [{
 
 } ];
 
-btn.addEventListener('click', function(){
+btn.addEventListener('click', function() {
+    
+
     let random = Math.floor(Math.random() * quotes.length);
 
     quote.innerText = quotes[random].quote;
