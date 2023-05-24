@@ -1,7 +1,7 @@
 
 // Variables 
 
-let btn = document.querySelector('#next-quote');
+let button = document.querySelector('#next-quote');
 let quote = document.querySelector('.quote');
 let author = document.querySelector('.author');
 
@@ -55,9 +55,10 @@ const quotes = [{
 
 } ];
 
-btn.addEventListener('click', function(){
+button.addEventListener('click', () => {
     let random = Math.floor(Math.random() * quotes.length);
 
     quote.innerText = quotes[random].quote;
     author.innerText = quotes[random].author;
+
 });
