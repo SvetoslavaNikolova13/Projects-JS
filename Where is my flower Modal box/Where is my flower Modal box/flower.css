@@ -1,0 +1,82 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*font-family: 'Beau Rivage', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Wix Madefor Text', sans-serif;*/
+}
+
+
+body {
+    height: 100vh;
+    background-image: url(./spring\ flowers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#open-button {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    top: 70%;
+    left: 10%;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+   /* background: transparent;*/
+    border: solid 2px white;
+    color: rgb(111, 83, 212);
+    padding: 5px;
+    box-shadow: 0 0 3px black; ;
+    transition: .5s;
+
+}
+#open-button:hover {
+    background-color: rgb(231, 7, 145);
+    color: black;
+} 
+
+#modal {
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 100px;
+    padding: 10px 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    animation-name: Flower;
+    animation-duration: .4s;
+}
+
+#close-button {
+    font-size: 48px;
+}
+
+#close-button:hover {
+    cursor: pointer;
+    font-size: 48px;
+    color: rgb(231, 7, 145);
+ 
+}
+
+#modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
