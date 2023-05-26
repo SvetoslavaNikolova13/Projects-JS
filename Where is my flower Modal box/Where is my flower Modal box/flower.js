@@ -1,23 +1,23 @@
 // Variables
 
-let openButton = document.getElementById('open-button');
+let openBtn = document.getElementById('open-btn');
 
-let closeButton = document.getElementById('close-button');
+let closeBtn = document.getElementById('close-btn');
 
-let modalContainer = document.getElementById('modal-container"');
+let modalBox = document.getElementById('modal-box');
 
 // Event Listeners
-openButton.addEventListener('click',function() {
-    modalContainer.style.display = 'block';
+openBtn.addEventListener('click', () => {
+    modalBox.style.display = 'block';
 });
 
-closeButton.addEventListener('click',function() {
-    modalContainer.style.display = 'none';
+closeBtn.addEventListener('click', () => {
+    modalBox.style.display = 'none';
 });
 
-window.addEventListener('click',function(event) {
-    if (event.target == modalContainer){
-        modalContainer.style.display = 'none';
+window.addEventListener('click', (event) => {
+    if (event.target === modalBox){
+        modalBox.style.display = 'none';
     }
 });
 
