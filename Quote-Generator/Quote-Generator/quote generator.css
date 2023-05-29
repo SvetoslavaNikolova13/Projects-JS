@@ -21,10 +21,10 @@ body {
     background-position: center;
 }
 .container {
-    /*display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;*/
+    flex-direction: column;
     background-color: #69c0cf;
     text-align: center;
     padding: 20px 15px;
@@ -107,6 +107,7 @@ h2 {
   padding: 55px 70px;
   height: 400px;
   margin-left: 37%;
+
    
   }
 
