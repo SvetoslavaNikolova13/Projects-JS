@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <!-- FontAwesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/69fea5dba4.js" crossorigin="anonymous"></script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/whack-a-mole/css/style1.css">
+    <title>Whack-a-Mole</title>
+</head>
+
+
+<body>
+
+    <!--Main Container-->
+
+    <div class="main-container">
+        <div class="header-container">
+             <span>Hit The Mouse</span>      
+        </div>
+
+        <div class="grid-container">
+            <div class="block" id="1"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="2"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="3"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="4"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="5"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="6"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="7"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="8"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="9"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="10"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="11"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="12"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="13"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="14"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="15"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+            <div class="block" id="16"><img src="/whack-a-mole/images/mouse.jpg" alt=""></div>
+        </div>
+
+        <!--Result Container-->
+
+        <div class="result-container">
+            <div class="score">Score: <span id="score-text">0</span></div>
+            <div class="time">Time Left: <span id="timer">--</span></div>
+        </div>
+
+        <!--Control Container-->
+
+        <div class="control"> 
+            <div class="speed-box">              
+                    <select id="gameSpeed">                      
+                      <option value="1000">Slow<i class="fa-solid fa-circle-chevron-down"></i></option>
+                      <option value="750">Normal</option>
+                      <option value="500">Fast</option>                      
+                    </select>                  
+                
+            </div>
+
+            <div id="play"><h3 id="text">Play Game</h3></div>
+            <div class="duration">
+                <select id="duration-drop">                    
+                    <option value="10">10s<i class="fa-solid fa-circle-chevron-down"></i></option>
+                    <option value="30">30s</option>
+                    <option value="60">60s</option>                      
+                  </select>
+                                
+            </div>
+        </div>    
+
+    </div>
+
+
+        <!--Modal Box-->
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal container -->
+
+       <div class="modal-container">
+        <!--<button id = "myBtn" class = "close">&times;</button>-->
+           <span class = "close" onclick="close()">&times;</span>
+           <p>Time is over.<br>Your scores are:<br> <b><span id="modal-score"></span></b> points</p>
+       </div>
+  
+    </div>
+    
+    <script src="/whack-a-mole/js/script.js"></script>
+</body>
+
+</html>
